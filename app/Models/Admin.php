@@ -6,11 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laratrust\Traits\LaratrustUserTrait;
 
 class Admin extends Authenticatable
 {
-   // use LaratrustUserTrait;
     use HasFactory, Notifiable;
 
     /**
@@ -18,10 +16,10 @@ class Admin extends Authenticatable
      *
      * @var array
      */
-    protected $guard='admin';
     protected $fillable = [
         'name',
         'username',
+        'phone',
         'national_id',
         'gender',
         'division',
@@ -52,5 +50,6 @@ class Admin extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
     
 }

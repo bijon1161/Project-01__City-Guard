@@ -49,11 +49,11 @@
                                 <p>Call Your Local Admin For Free Consultation</p>
                             </div>
                             <div class="social">
-                                <a href="https://twitter.com/BijonMallik"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/rahul.r.rohan"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.linkedin.com/in/bijon-mallik-40a2271ab/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/ibijon.17/"><i class="fab fa-instagram"></i></a>
-                                <a href="http://youtube.com/mrsurge"><i class="fab fa-youtube"></i></a>
+                                <a href="https://twitter.com/BijonMallik" target="_blank"><i class="fab fa-twitter" ></i></a>
+                                <a href="https://www.facebook.com/rahul.r.rohan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/in/bijon-mallik-40a2271ab/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/ibijon.17/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="http://youtube.com/mrsurge" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
                             <a href="/" class="nav-item nav-link active">Home</a>
-                            <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
-                            <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
+                            <a href="{{ route('user.login') }}" class="nav-item nav-link">Login</a>
+                            <a href="{{ route('user.register') }}" class="nav-item nav-link">Register</a>
                             <a href="/casestudy" class="nav-item nav-link">Feedbacks</a>
                             <a href="{{ route('aboutus') }}" class="nav-item nav-link">About Us</a>
                             <div class="nav-item dropdown">
@@ -88,7 +88,7 @@
                             <a href="/contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="ml-auto">
-                            <a class="btn" href="https://www.pust.ac.bd/academic/departments/dept_teachers/dept_teachers_profile/100013">Get Appointment</a>
+                            <a class="btn" href="https://www.pust.ac.bd/academic/departments/dept_teachers/dept_teachers_profile/100013" target="_blank">Get Appointment</a>
                         </div>
                     </div>
                 </nav>
@@ -110,7 +110,7 @@
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">We fight for your justice</h1>
                         <p class="animated fadeInRight">We dream for a better community</p>
-                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse">Get free consultation</a>
+                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse" target="_blank">Get free consultation</a>
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
                         <p class="animated fadeInRight">Your security is our concern</p>
-                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse">Get free consultation</a>
+                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse" target="_blank">Get free consultation</a>
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">We fight for your privilege</h1>
                         <p class="animated fadeInRight">Be confident, Be strong</p>
-                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse">Get free consultation</a>
+                        <a class="btn animated fadeInUp" href="https://www.facebook.com/Boighor.cse" target="_blank">Get free consultation</a>
                     </div>
                 </div>
             </div>

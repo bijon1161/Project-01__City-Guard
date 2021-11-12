@@ -12,11 +12,19 @@ return [
     | as required, but they're a perfect start for most applications.
     |
     */
-
+    
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'users',
     ],
+    'admin'=>[
+       'driver'=>'eloquent',
+       'model'=>App\Models\Admin::class,
+    ],
+    'superadmin'=>[
+        'driver'=>'eloquent',
+        'model'=>App\Models\Superadmin::class,
+     ],
 
     /*
     |--------------------------------------------------------------------------
@@ -40,16 +48,20 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'admin' => [
-            'driver' => 'session',
-            'provider' => 'admins',
-        ],
 
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
         ],
+        'admin'=>[
+           'driver'=>'session',
+           'provider'=>'admins',
+        ],
+        'superadmin'=>[
+            'driver'=>'session',
+            'provider'=>'superadmins',
+         ],
     ],
 
     /*
@@ -74,15 +86,19 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Admin::class,
-        ],
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'admins'=>[
+           'driver'=>'eloquent',
+           'model'=>App\Models\Admin::class,
+        ],
+        'superadmins'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Models\Superadmin::class,
+         ],
     ],
 
     /*
@@ -107,12 +123,14 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
-        'admins' => [
-            'provider' => 'admins',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
+        'admins'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Models\Admin::class,
         ],
+        'superadmins'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Models\Superadmin::class,
+        ]
     ],
 
     /*

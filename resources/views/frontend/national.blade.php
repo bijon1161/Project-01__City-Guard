@@ -104,110 +104,53 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>About Us</h2>
+                        <h2>National</h2>
                     </div>
                     <div class="col-12">
                         <a href="/">Home</a>
-                        <a href="">About Us</a>
+                        <a href="">National</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Page Header End -->
 
-
-        <!-- About Start -->
-        <div class="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-img">
-                            <img src="{{ asset('admin3')}}/img/Group.jpeg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6">
-                        <div class="section-header">
-                            <h2>Learn About Us</h2>
-                        </div>
-                        <div class="about-text">
-                        
-                            <p> 
-                            <mark>Who We Are and What We Do:<br></mark>
-                                City Guard has been developed by Bijon Mallik,CS Graduate from PUST, to help law enforcement agencies throughout the whole Bangladesh providing with valuable information about recent & future crime activity in their neighborhood. Our goal is to assist police departments in reducing crime through a better-informed citizenry. Creating more self-reliance among community members is a great benefit to community oriented policing efforts everywhere and has been proven effective in combating crime.
-
-                            </p>
-
-                            <p>
-                                As far you know,this is a public facing crime information and crime alert service. With City Guard, it’s easier than ever to check crime anywhere in Bangladesh because it offers security to the information providers.
-                                Our goal is to provide the most accurate and timely crime information to the public and to the officials.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Timeline Start -->
-        <div class="timeline">
+        <div class="testimonial">
             <div class="container">
                 <div class="section-header">
-                    <h2>Learn About Our Goal</h2>
+                    <h2>Articles From Superadmin</h2>
                 </div>
-                <div class="timeline-start">
-                    <div class="timeline-container left">
-                        <div class="timeline-content">
-                            <h2><span>2020</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
+                <div class="owl-carousel testimonials-carousel">
+                @foreach($user_data as $data)
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="{{ asset('admin3')}}/img/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>{{$data->name}}</h2>
+                                <p>{{$data->designation}}</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                {{$data->message}}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeline-container right">
-                        <div class="timeline-content">
-                            <h2><span>2019</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-container left">
-                        <div class="timeline-content">
-                            <h2><span>2018</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-container right">
-                        <div class="timeline-content">
-                            <h2><span>2017</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-container left">
-                        <div class="timeline-content">
-                            <h2><span>2016</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-container right">
-                        <div class="timeline-content">
-                            <h2><span>2015</span>Lorem ipsum dolor sit amet</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- Timeline End -->
+
+
+
+
+        
+
+
+        
 
 
         <!-- Team Start -->

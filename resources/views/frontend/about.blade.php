@@ -50,11 +50,11 @@
                                 <p>Call Your Local Admin For Free Consultation</p>
                             </div>
                             <div class="social">
-                                <a href="https://twitter.com/BijonMallik"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/rahul.r.rohan"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.linkedin.com/in/bijon-mallik-40a2271ab/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/ibijon.17/"><i class="fab fa-instagram"></i></a>
-                                <a href="http://youtube.com/mrsurge"><i class="fab fa-youtube"></i></a>
+                                <a href="https://twitter.com/BijonMallik" target="_blank"><i class="fab fa-twitter" ></i></a>
+                                <a href="https://www.facebook.com/rahul.r.rohan" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/in/bijon-mallik-40a2271ab/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/ibijon.17/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="http://youtube.com/mrsurge" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -158,49 +158,49 @@
                 <div class="timeline-start">
                     <div class="timeline-container left">
                         <div class="timeline-content">
-                            <h2><span>2020</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>101</span>Establish organizationwide information security</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Information security, or cybersecurity, concerns should permeate the organization’s structure and functions. Management at all levels should ensure that information security is integrated with information technology (IT) and other activities. Top-level management should ensure that information security serves overall business objectives and should establish responsibility and accountability throughout the organization.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-container right">
                         <div class="timeline-content">
-                            <h2><span>2019</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>102</span>Adopt a risk-based approach</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Security governance, including allocation of resources and budgets, should be based on the risk appetite of an organization, considering loss of competitive advantage, compliance and liability risks, operational disruptions, reputational harm, and financial loss.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-container left">
                         <div class="timeline-content">
-                            <h2><span>2018</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>103</span>Set the direction of investment decisions</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Information security investments are intended to support organizational objectives. Security governance entails ensuring that information security is integrated with existing organization processes for capital and operational expenditure, for legal and regulatory compliance, and for risk reporting.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-container right">
                         <div class="timeline-content">
-                            <h2><span>2017</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>104</span>Ensure conformance with internal and external requirements</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            External requirements include mandatory legislation and regulations, standards leading to certification, and contractual requirements. Internal requirements comprise broader organizational goals and objectives. Independent security audits are the accepted means of determining and monitoring conformance.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-container left">
                         <div class="timeline-content">
-                            <h2><span>2016</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>105</span>Foster a security-positive environment for all stakeholders</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Security governance should be responsive to stakeholder expectations, keeping in mind that various stakeholders can have different values and needs. The governing body should take the lead in promoting a positive information security culture, which includes requiring and supporting security education, training, and awareness programs.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-container right">
                         <div class="timeline-content">
-                            <h2><span>2015</span>Lorem ipsum dolor sit amet</h2>
+                            <h2><span>106</span>Review performance in relation to business outcomes</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            From a governance perspective, security performance encompasses not just effectiveness and efficiency but also impact on overall business goals and objectives. Governance executives should mandate reviews of a performance measurement program for monitoring, audit, and improvement that links information security performance to business performance.
                             </p>
                         </div>
                     </div>

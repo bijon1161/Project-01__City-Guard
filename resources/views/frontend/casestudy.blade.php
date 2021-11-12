@@ -137,7 +137,9 @@
         <div class="bg-contact2" style="background-image: url('admin4/images/bg-04.jpg');">
             <div class="container-contact2">
                 <div class="col-lg-7 col-md-6">
-                    <form class="contact2-form validate-form">
+                    <form class="contact2-form validate-form" action="{{ route('case') }}" method="POST">
+                    @csrf
+
 
                         <div class="section-header">
                             <h2>Give Feedback</h2>
@@ -154,14 +156,14 @@
                         </div>
 
                         <div class="wrap-input2 validate-input" data-validate="Message is required">
-                            <textarea class="input2" name="message"></textarea>
+                            <textarea class="input2" type="text" name="message"></textarea>
                             <span class="focus-input2" data-placeholder="MESSAGE"></span>
                         </div>
 
                         <div class="container-contact2-form-btn">
                             <div class="wrap-contact2-form-btn">
                                 <div class="contact2-form-bgbtn"></div>
-                                <button class="contact2-form-btn">
+                                <button class="contact2-form-btn" type="submit" class="btn btn-primary mb-3" name="submit" id="submit">
                                     Send Your Message
                                 </button>
                             </div>
@@ -180,6 +182,7 @@
                     <h2>Feedbacks From Users</h2>
                 </div>
                 <div class="owl-carousel testimonials-carousel">
+                @foreach($user_data as $data)
                     <div class="testimonial-item">
                         <i class="fa fa-quote-right"></i>
                         <div class="row align-items-center">
@@ -187,118 +190,17 @@
                                 <img src="{{ asset('admin3')}}/img/testimonial-1.jpg" alt="">
                             </div>
                             <div class="col-9">
-                                <h2>Rabby Dip</h2>
-                                <p>Student</p>
+                                <h2>{{$data->name}}</h2>
+                                <p>{{$data->email}}</p>
                             </div>
                             <div class="col-12">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                {{$data->message}}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Amiya Kundu</h2>
-                                <p>Teacher</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-3.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Mahadi Hasan</h2>
-                                <p>Doctor</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-4.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Eshita Nahar</h2>
-                                <p>Soft. Trainee</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-1.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Client Name</h2>
-                                <p>Profession</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Client Name</h2>
-                                <p>Profession</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <i class="fa fa-quote-right"></i>
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <img src="{{ asset('admin3')}}/img/testimonial-3.jpg" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h2>Client Name</h2>
-                                <p>Profession</p>
-                            </div>
-                            <div class="col-12">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -1,0 +1,166 @@
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #202020; }
+
+.pricing-table-title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 36px;
+  margin-bottom: 36px; }
+
+.pricing-tab {
+  margin-bottom: 58px; }
+  .pricing-tab .nav-link {
+    color: #fff;
+    position: relative;
+    padding-left: 25px; }
+    .pricing-tab .nav-link::before {
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      left: 1.25px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-color: #fff;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .pricing-tab .nav-link.active {
+      background-color: transparent;
+      color: #fff; }
+      .pricing-tab .nav-link.active::before {
+        left: 0;
+        background-color: #00cd99;
+        border: 5px solid #fff;
+        width: 16.5px;
+        height: 16.5px; }
+
+.pricing-tab-content .tab-pane.active {
+  -webkit-animation: slide-down 0.6s ease-in-out;
+          animation: slide-down 0.6s ease-in-out; }
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.pricing-card {
+  border: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border-radius: 8px; }
+  @media (max-width: 767px) {
+    .pricing-card {
+      margin-bottom: 28px; } }
+  .pricing-card .card-body {
+    padding: 35px 35px 16px; }
+  .pricing-card .card-footer {
+    background-color: transparent;
+    border-top: 0;
+    padding: 0; }
+  .pricing-card.pricing-card-highlighted, .pricing-card:hover {
+    background-color: #fe397a; }
+
+.pricing-plan-title {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 7px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .pricing-card-highlighted .pricing-plan-title, .pricing-card:hover .pricing-plan-title {
+    color: #fff; }
+
+.pricing-plan-original-cost {
+  font-size: 20px;
+  color: #c1c1c1;
+  font-weight: bold;
+  margin-bottom: 0; }
+  .pricing-card-highlighted .pricing-plan-original-cost, .pricing-card:hover .pricing-plan-original-cost {
+    color: #fff;
+    opacity: 0.75; }
+
+.pricing-plan-cost {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  color: #000; }
+  .pricing-plan-cost .currency {
+    font-size: 20px;
+    position: relative;
+    left: -5px; }
+  .pricing-card-highlighted .pricing-plan-cost, .pricing-card:hover .pricing-plan-cost {
+    color: #fff; }
+
+.pricing-plan-features {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.67;
+  font-size: 15px;
+  margin-bottom: 40px; }
+  .pricing-card-highlighted .pricing-plan-features, .pricing-card:hover .pricing-plan-features {
+    color: #fff; }
+  .pricing-plan-features li {
+    padding-left: 21px;
+    position: relative; }
+    .pricing-plan-features li::before {
+      content: "\F12C";
+      font-family: "Material Design Icons";
+      color: #3ccf8e;
+      position: absolute;
+      left: 0; }
+      .pricing-card-highlighted .pricing-plan-features li::before, .pricing-card:hover .pricing-plan-features li::before {
+        color: #fff; }
+
+.pricing-plan-purchase-btn {
+  color: #000;
+  background-color: transparent;
+  border: solid 1px #dde5f5;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-bottom: 10px; }
+  .pricing-plan-purchase-btn:hover {
+    color: #fe397a; }
+  .pricing-card-highlighted .pricing-plan-purchase-btn, .pricing-card:hover .pricing-plan-purchase-btn {
+    border: 0;
+    background-color: #fff; }
+
+.pricing-plan-link {
+  color: #c1c1c1;
+  font-size: 14px; }
+  .pricing-card-highlighted .pricing-plan-link, .pricing-card:hover .pricing-plan-link {
+    color: #fff;
+    opacity: 0.75; }
+
+.offer-badge {
+  padding: 8px 15px;
+  background-color: #fe397a;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=pricing-plan.css.map */
